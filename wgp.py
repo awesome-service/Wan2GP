@@ -5190,7 +5190,7 @@ if __name__ == "__main__":
     if os.name == "nt":
         asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
     if server_port == 0:
-        server_port = int(os.getenv("SERVER_PORT", "7860"))
+        server_port = int(os.getenv("SERVER_PORT", "42021"))
     server_name = args.server_name
     if args.listen:
         server_name = "0.0.0.0"
